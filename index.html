@@ -8,13 +8,13 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #000000;
-            color: #00ff0d;
+            color: #333;
             margin: 0;
             padding: 20px;
         }
         header {
-            background-color: #4caf50;
-            color: white;
+            background-color: #ffae00;
+            color: black;
             text-align: center;
             padding: 10px 0;
         }
@@ -22,8 +22,12 @@
             max-width: 100%;
             height: auto;
         }
-		section {color: white;	text-align: center;}
-		#randomText{font-size:20px; font-weight: bold;}
+		section {
+            color: white;	text-align: center;
+        }
+		#randomText{
+            font-size:17px; font-weight: normal;
+        }
     </style>
 </head>
 <body>
@@ -39,7 +43,7 @@
 				const letters= '0123456789ABCDEF';
 				let color='#';
 				for(let i=0; i<6; i++){
-					color += letter[Math.floor(Math.random()*16)];}return color;
+					color += letters[Math.floor(Math.random()*16)];}return color;
 					}
 					setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
 		</script>
