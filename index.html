@@ -24,12 +24,27 @@
         }
 		section {color: white;	text-align: center;}
 		#randomText{font-size:20px; font-weight: bold;}
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
     </style>
 </head>
 <body>
     <header>
-	<marquee behavior="scroll" direction="left">
-	<h1>FLEXIBILITY MOMENT WEBSITE</h1>
+        <div class="marquee">
+        <div class="marquee-content">FLEXIBILITY MOMENT WEBSITE</div>
+    </div>
 	</marquee>
     </header>
     <section><h2>About Me</h2>
