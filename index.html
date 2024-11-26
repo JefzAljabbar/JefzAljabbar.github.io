@@ -23,6 +23,7 @@
             height: auto;
         }
 		section {color: white;	text-align: center;}
+		#randomText{font-size:24px; font-weight: bold;}
     </style>
 </head>
 <body>
@@ -32,7 +33,16 @@
 	</marquee>
     </header>
     <section><h2>About Me</h2>
-        <p>Nothing special HERE!</p>
+        <div id="randomText">Nothing special HERE!</div>
+		<script>
+			function WarnaRandom(){
+				const letters= '0123456789ABCDEF';
+				let color='#';
+				for(let i=0; i<6; i++){
+					color += letter[Math.floor(Math.random()*16)];}return color;
+					}
+					setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},100);
+		</script>
     </section>
 </body>
 </html>
