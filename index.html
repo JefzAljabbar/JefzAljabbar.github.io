@@ -92,7 +92,7 @@
         function createFallingLeaf() {
             const leaf = document.createElement('div');
             leaf.className = 'falling';
-            leaf.style.left = Math.random() * window.innerWidth + 'px';
+            leaf.style.left = Math.random();
             leaf.style.animationDuration = Math.random() * 3 + 2 + 's';
             leaf.innerText = '🩵'; // Simbol daun
             document.body.appendChild(leaf);
