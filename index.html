@@ -63,21 +63,11 @@
    
         <div id="randomText">☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆</div>
 		<script>
-<<<<<<< HEAD
-			function WarnaRandom(){
-				const letters= '0123456789ABCDEF';
-				let color='#';
-				for(let i=0; i<6; i++){
-					color += letters[Math.floor(Math.random()*16)];}return color;
-					}
-					setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
-
-=======
      function createFallingLeaf() {
             const leaf = document.createElement('div');
             leaf.className = 'falling';
             leaf.style.left = Math.random()* window.innerWidth + 'px';
-            leaf.style.animationDuration = Math.random() * 10 + 15 + 's';
+            leaf.style.animationDuration = Math.random() * 5 + 15 + 's';
             leaf.innerText = '★'; // Simbol daun
             document.body.appendChild(leaf);
 
@@ -95,7 +85,6 @@
 			}
 	setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
             
->>>>>>> d011f2cc098d5852754f90ad2d5d2156ef4d7ef4
     var countDownDate = new Date("Mar 18, 2024");
     countDownDate.setFullYear(countDownDate.getFullYear() + 3);
 
