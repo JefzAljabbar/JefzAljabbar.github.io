@@ -265,11 +265,8 @@
   }
   
   @keyframes shadow-animation {
-  
     50% {
-  
       transform: scale(1.15);
-  
     }
   
   }
@@ -285,7 +282,6 @@
     animation: dripping 2.4s linear  infinite ;
     animation-delay: 0.2s;
   }
-  
   .melting_ice-cream_2 {
     position: absolute;
     top: 300px;
@@ -296,7 +292,6 @@
     border-radius: 50%;
     animation: dripping 1.9s linear infinite;
   }
-  
   @keyframes dripping{
        0%{
            transform:translateY(90px);
