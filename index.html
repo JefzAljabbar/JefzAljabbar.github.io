@@ -65,7 +65,9 @@
         <div id="randomText">☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆</div>
 		<script>
      function createFallingLeaf() {
+            const volumedaun =30;
             const leaf = document.createElement('div');
+            for (let i=0; i<volumedaun; i++){
             leaf.className = 'falling';
             leaf.style.left = Math.random()* window.innerWidth + 'px';
             leaf.style.animationDuration = Math.random() * 5 + 15 + 's';
@@ -75,6 +77,7 @@
             leaf.addEventListener('animationend', () => {
                 leaf.remove();
             });
+          }
         }
         setInterval(createFallingLeaf, 500);
 			
