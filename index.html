@@ -13,16 +13,17 @@
             margin: 0;
             padding: 20px;
             text-align: center;
+            font-size:20px;
         }.falling {
             position: absolute;
             top: -50px;
             font-size: 24px;
             color: #ffffff;
-            animation: fall 5s infinite;
+            animation: fall 10s infinite;
         }
         @keyframes fall {
             to {
-                transform: translateY(95vh);
+                transform: translateY(395vh);
             }
 	}
         header {
@@ -46,8 +47,8 @@
             text-align: center;
         }
 	p {
-            margin: -7px; /* Mengatur jarak luar */
-            padding: -7px; /* Mengatur jarak dalam */
+            margin: -17px; /* Mengatur jarak luar */
+            padding: -15px; /* Mengatur jarak dalam */
         }
     </style>
 </head>
@@ -66,7 +67,7 @@
             const leaf = document.createElement('div');
             leaf.className = 'falling';
             leaf.style.left = Math.random()* window.innerWidth + 'px';
-            leaf.style.animationDuration = Math.random() * 3 + 2 + 's';
+            leaf.style.animationDuration = Math.random() * 10 + 15 + 's';
             leaf.innerText = '★'; // Simbol daun
             document.body.appendChild(leaf);
 
