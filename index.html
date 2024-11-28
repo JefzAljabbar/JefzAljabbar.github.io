@@ -52,21 +52,37 @@
     </style>
 </head>
 <body>
+<div class="falling">🩵</div>
     <header>
 	<h1>Countdown 3 Years!!!</h1>
         <p><h1>_From 18 March 2024</h1></p>
     </header>
+
     <section><h1 id="countdown"></h1>
+   
         <div id="randomText">☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆</div>
-	<div class="falling">🩵</div>
 		<script>
-			function WarnaRandom(){
-				const letters= '0123456789ABCDEF';
-				let color='#';
-				for(let i=0; i<6; i++){
-					color += letters[Math.floor(Math.random()*16)];}return color;
-					}
-					setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
+     function createFallingLeaf() {
+            const leaf = document.createElement('div');
+            leaf.className = 'falling';
+            leaf.style.left = Math.random()* window.innerWidth + 'px';
+            leaf.style.animationDuration = Math.random() * 3 + 2 + 's';
+            leaf.innerText = '🩵'; // Simbol daun
+            document.body.appendChild(leaf);
+
+            leaf.addEventListener('animationend', () => {
+                leaf.remove();
+            });
+        }
+        setInterval(createFallingLeaf, 500);
+			
+	function WarnaRandom(){
+	const letters= '0123456789ABCDEF';
+	let color='#';
+	for(let i=0; i<6; i++){
+	color += letters[Math.floor(Math.random()*16)];}return color;
+			}
+	setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
             
     var countDownDate = new Date("Mar 18, 2024");
     countDownDate.setFullYear(countDownDate.getFullYear() + 3);
@@ -89,20 +105,7 @@
         document.getElementById("countdown").innerHTML = "Waktu countdown telah berakhir";
       }
     }, 1000);
-        function createFallingLeaf() {
-            const leaf = document.createElement('div');
-            leaf.className = 'falling';
-            leaf.style.left = Math.random()* window.innerWidth + 'px';
-            leaf.style.animationDuration = Math.random() * 3 + 2 + 's';
-            leaf.innerText = '🩵'; // Simbol daun
-            document.body.appendChild(leaf);
-
-            leaf.addEventListener('animationend', () => {
-                leaf.remove();
-            });
-        }
-
-        setInterval(createFallingLeaf, 500);
+        
 		</script>
     </section>
     <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj9DoZU7N0685YGGuWMnYUKOEJ-EOyCZyuy6u0iLkSWN5eXd513vLR42RWdKv8mUXrN9yAb8pobt4I69hwoBohat_UJR30Ctocrz7JdaZwt42TkKExZRWnuqpL4W1y0GNhrNFTtUBA4MiJL2Oqlty_8gNHgStZKW4Qahz8f9aVP6ToEyfuvl0_vo1X-QCLQ"/>
