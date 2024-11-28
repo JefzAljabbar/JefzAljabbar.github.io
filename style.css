@@ -76,11 +76,11 @@
     border-bottom: 2px solid #FF98CC;
     border-radius: 100%;
     top:110px;
-    -webkit-transform-origin: 50%;
-    -webkit-animation: blink 2s infinite;
+    transform-origin: 50%;
+    animation: blink 2s infinite;
   }
   
-  @-webkit-keyframes blink {
+  @keyframes blink {
       0% {
          transform: scale(1, .05);
       }
@@ -297,7 +297,7 @@
     animation: dripping 1.9s linear infinite;
   }
   
-  @-webkit-keyframes dripping{
+  @keyframes dripping{
        0%{
            transform:translateY(90px);
        }
