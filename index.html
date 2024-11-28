@@ -13,7 +13,18 @@
             margin: 0;
             padding: 20px;
             text-align: center;
+        }.falling {
+            position: absolute;
+            top: -50px;
+            font-size: 24px;
+            color: #ffffff;
+            animation: fall 5s infinite;
         }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+	}
         header {
             color: #ffae00;
             text-align: center;
@@ -42,6 +53,7 @@
     </header>
     <section><h1 id="countdown"></h1>
         <div id="randomText">||||||||||||||||||||||||||</div>
+	<div class="falling">🩵</div>
 		<script>
 			function WarnaRandom(){
 				const letters= '0123456789ABCDEF';
@@ -72,6 +84,20 @@
         document.getElementById("countdown").innerHTML = "Waktu countdown telah berakhir";
       }
     }, 1000);
+        function createFallingLeaf() {
+            const leaf = document.createElement('div');
+            leaf.className = 'falling';
+            leaf.style.left = Math.random() * window.innerWidth + 'px';
+            leaf.style.animationDuration = Math.random() * 3 + 2 + 's';
+            leaf.innerText = '🩵'; // Simbol daun
+            document.body.appendChild(leaf);
+
+            leaf.addEventListener('animationend', () => {
+                leaf.remove();
+            });
+        }
+
+        setInterval(createFallingLeaf, 500);
 		</script>
     </section>
     <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj9DoZU7N0685YGGuWMnYUKOEJ-EOyCZyuy6u0iLkSWN5eXd513vLR42RWdKv8mUXrN9yAb8pobt4I69hwoBohat_UJR30Ctocrz7JdaZwt42TkKExZRWnuqpL4W1y0GNhrNFTtUBA4MiJL2Oqlty_8gNHgStZKW4Qahz8f9aVP6ToEyfuvl0_vo1X-QCLQ"/>
