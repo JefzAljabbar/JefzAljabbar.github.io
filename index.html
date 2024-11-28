@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport">
     <title>FLEXIBILITY MOMENT*</title>
     <style>
         body {
@@ -13,16 +13,29 @@
             margin: 0;
             padding: 20px;
             text-align: center;
+            font-size:20px;
+        }.falling {
+            position: absolute;
+            top: -50px;
+            font-size: 24px;
+            color: #ffffff;
+            animation: fall 10s infinite;
         }
+        @keyframes fall {
+            to {
+                transform: translateY(395vh);
+            }
+	}
         header {
             color: #ffae00;
             text-align: center;
             font-weight: bold;
             font-size:25px;
+	    white-space: nowrap;
         }
         img {
-            max-width: 75%;
-            height: auto;
+            aspect-ratio: 1280/720;
+	    max-width: 80%;
         }
 		section {
             color: white;	text-align: center;
@@ -33,16 +46,24 @@
         #countdown {
             text-align: center;
         }
+	p {
+            margin: -17px; /* Mengatur jarak luar */
+            padding: -15px; /* Mengatur jarak dalam */
+        }
     </style>
 </head>
 <body>
+<div class="falling">☆</div>
     <header>
 	<h1>Countdown 3 Years!!!</h1>
         <p><h1>_From 18 March 2024</h1></p>
     </header>
+
     <section><h1 id="countdown"></h1>
-        <div id="randomText">||||||||||||||||||||||||||</div>
+   
+        <div id="randomText">☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆</div>
 		<script>
+<<<<<<< HEAD
 			function WarnaRandom(){
 				const letters= '0123456789ABCDEF';
 				let color='#';
@@ -51,6 +72,30 @@
 					}
 					setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
 
+=======
+     function createFallingLeaf() {
+            const leaf = document.createElement('div');
+            leaf.className = 'falling';
+            leaf.style.left = Math.random()* window.innerWidth + 'px';
+            leaf.style.animationDuration = Math.random() * 10 + 15 + 's';
+            leaf.innerText = '★'; // Simbol daun
+            document.body.appendChild(leaf);
+
+            leaf.addEventListener('animationend', () => {
+                leaf.remove();
+            });
+        }
+        setInterval(createFallingLeaf, 500);
+			
+	function WarnaRandom(){
+	const letters= '0123456789ABCDEF';
+	let color='#';
+	for(let i=0; i<6; i++){
+	color += letters[Math.floor(Math.random()*16)];}return color;
+			}
+	setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
+            
+>>>>>>> d011f2cc098d5852754f90ad2d5d2156ef4d7ef4
     var countDownDate = new Date("Mar 18, 2024");
     countDownDate.setFullYear(countDownDate.getFullYear() + 3);
 
@@ -72,8 +117,38 @@
         document.getElementById("countdown").innerHTML = "Waktu countdown telah berakhir";
       }
     }, 1000);
+        
 		</script>
     </section>
     <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj9DoZU7N0685YGGuWMnYUKOEJ-EOyCZyuy6u0iLkSWN5eXd513vLR42RWdKv8mUXrN9yAb8pobt4I69hwoBohat_UJR30Ctocrz7JdaZwt42TkKExZRWnuqpL4W1y0GNhrNFTtUBA4MiJL2Oqlty_8gNHgStZKW4Qahz8f9aVP6ToEyfuvl0_vo1X-QCLQ"/>
+   <main>
+   <div class='container'>
+   <div class='ice-cream'>
+   <div class='details'>
+   </div>
+   <div class='melting_ice-cream_1'></div>
+   <div class='melting_ice-cream_2'></div>
+   <div class='bite_1'></div>
+   <div class='bite_2'></div>
+   <div class='melting_container'>
+   <div class='drip_1'></div>
+   <div class='drip_2'></div>
+   <div class='drip_3'></div>
+   </div>
+   <div class='ice-cream_face'>
+   <div class='ice-cream_eye'>
+   <div class='left eye'></div>
+   <div class='right eye'></div>
+   </div>
+   <div class='mouth'>
+   <div class='tongue'></div>
+   </div>
+   </div>
+   </div>
+   <div class='ice-cream_stick'></div>
+   <div class='ice-cream_stick-shadow'></div>
+   <div class='melted_ice-cream'></div>
+   </div>
+   </main> 
 </body>
 </html>
