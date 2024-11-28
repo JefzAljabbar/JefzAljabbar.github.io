@@ -1,7 +1,7 @@
 
 .container {
     position: absolute;
-    top: 100%;
+    top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -29,7 +29,7 @@
     justify-content: space-around;
     width: 75px;
     height: 80px;
-    background: #FFFFFF;
+    background: #000000;
     border-radius: 95%;
     transform: scale(0.55);
     transform: rotate(-40deg);
@@ -44,7 +44,7 @@
     justify-content: space-around;
     width: 55px;
     height: 60px;
-    background: #FFFFFF;
+    background: #000000;
     border-radius: 95%;
     transform: scale(0.55);
     transform: rotate(-40deg);
@@ -209,7 +209,7 @@
     left: -22px;
     width: 21.77px;
     height: 70px;
-    background: #FFFFFF; 
+    background: #000000; 
     border-radius: 0px 105px 0 0;
     z-index: 9;
   }
@@ -220,7 +220,7 @@
     left: 42px;
     width: 25.77px;
     height: 70px;
-    background: #FFFFFF;
+    background: #000000;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;  
     z-index: 9; 
@@ -314,6 +314,3 @@
            transform:translateY(230px);
        }
   }
-   
-   
-  
