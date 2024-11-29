@@ -2,7 +2,7 @@
 function createFallingLeaf() {
     for(let i=0; i<1; i++){
          const leaf = document.createElement('leaf');
-         leaf.className = 'falling';
+         leaf.className = 'falling-spinning';
          leaf.innerText = '★'; // Simbol daun
          leaf.style.left = Math.random()* window.innerWidth + 'px';
          leaf.style.fontSize = Math.random() * 30 + 5 /2+ 'px';
