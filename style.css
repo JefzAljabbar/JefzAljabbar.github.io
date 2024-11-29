@@ -1,6 +1,6 @@
 .container02 {
   position: relative;
-  top: 50%;
+  top: -60%;
   left: 100%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -8,8 +8,8 @@
   align-items: center;
 }
 .container {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: -180%;
   left: 0%;
   transform: translate(-50%, -50%);
   display: flex;
