@@ -8,16 +8,18 @@ body {
   padding: 20px;
   text-align: center;
   font-size:20px;
-}.falling {
+}
+.falling {
   position: absolute;
   top: -50px;
   font-size: 24px;
   color: #ffffff;
-  animation: fall 10s infinite;
+  text-shadow: 1px 1px 10px #ffae00;
+  animation: fall 10s 5;
 }
 @keyframes fall {
   to {
-      transform: translateY(395vh);
+      transform: translateY(95vh);
   }
 }
 header {
