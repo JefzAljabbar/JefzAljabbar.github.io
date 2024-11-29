@@ -7,15 +7,20 @@ body {
   padding: 20px;
   text-align: center;
   font-size:20px;
-}.falling {
+}
+.falling-spinning {
   position: absolute;
   text-shadow: 1px 1px 10px #ffae00;
-  animation: fall 2s linear infinite;
+  animation: fall 2s linear infinite, spinning 1s linear infinite;
   color: white;
 }
 @keyframes fall {
   0% {top: -10%;}
   100% {top: 200%;}
+}
+@keyframes spinning{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
 }
 header {
   color: #ffae00;
