@@ -10,7 +10,6 @@
     </style>
 </head>
 <body>
-<div class="falling">☆</div>
     <header>
 	<h1>Countdown 3 Years!!!</h1>
         <p><h1>_From 18 March 2024</h1></p>
@@ -21,18 +20,22 @@
         <div id="randomText">☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆</div>
 		<script>
      function createFallingLeaf() {
-            const leaf = document.createElement('div');
+       for(let i=0; i<1; i++){
+            const leaf = document.createElement('leaf');
             leaf.className = 'falling';
-            leaf.style.left = Math.random()* window.innerWidth + 'px';
-            leaf.style.animationDuration = Math.random() * 5 + 15 + 's';
             leaf.innerText = '★'; // Simbol daun
+            leaf.style.left = Math.random()* window.innerWidth + 'px';
+            leaf.style.fontSize = Math.random() * 30 + 5 /2+ 'px';
+            leaf.style.animationDuration = Math.random() * 5 + 15 + 's';
             document.body.appendChild(leaf);
 
-            leaf.addEventListener('animationend', () => {
+            setTimeout(() => {
                 leaf.remove();
-            });
+            },8000);
+            }
           }
-        setInterval(createFallingLeaf, 2000);
+      createFallingLeaf();
+        setInterval(createFallingLeaf, 500);
       
             
 			
