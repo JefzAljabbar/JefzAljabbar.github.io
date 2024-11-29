@@ -1,6 +1,6 @@
 .container02 {
-  position: relative;
-  top: -60%;
+  position: absolute;
+  top: 80%;
   left: 100%;
   transform: translate(-50%, -50%);
   display: flex;
