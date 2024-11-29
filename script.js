@@ -51,7 +51,6 @@ function createFallingLeaf() {
    document.getElementById("countdown").innerHTML = years + " Tahun " + months + " Bulan " + days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik ";
 
    if (distance < 0) {
- }, 1000);
     document.getElementById("countdown").innerHTML = "-" + years1 + " Tahun " + "-" + months1 + " Bulan " + "-" + days1 + " Hari " + "-" + hours1 + " Jam " + "-" + minutes1 + " Menit " + "-" + seconds1 + " Detik ";
   }
    }, 1000);
