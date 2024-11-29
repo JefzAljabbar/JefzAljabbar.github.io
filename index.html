@@ -21,9 +21,7 @@
         <div id="randomText">☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆♡☆</div>
 		<script>
      function createFallingLeaf() {
-            const volumedaun =5;
             const leaf = document.createElement('div');
-            for (let i=0; i<volumedaun; i++){
             leaf.className = 'falling';
             leaf.style.left = Math.random()* window.innerWidth + 'px';
             leaf.style.animationDuration = Math.random() * 5 + 15 + 's';
@@ -34,8 +32,9 @@
                 leaf.remove();
             });
           }
-        }
-        setInterval(createFallingLeaf, 500);
+        setInterval(createFallingLeaf, 2000);
+      
+            
 			
 	function WarnaRandom(){
 	const letters= '0123456789ABCDEF';
