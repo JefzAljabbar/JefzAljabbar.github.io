@@ -33,6 +33,7 @@ function createFallingLeaf() {
  var x = setInterval(function() {
    var now = new Date().getTime();
    var distance = countDownDate - now;
+   var distance1 = now- countDownDate;
 
    var years = Math.floor(distance / (1000 * 60 * 60 * 24 * 365));
    var months = Math.floor((distance % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
@@ -41,11 +42,17 @@ function createFallingLeaf() {
    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+   var years1 = Math.floor(distance1 / (1000 * 60 * 60 * 24 * 365));
+   var months1 = Math.floor((distance1 % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
+   var days1 = Math.floor((distance1 % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
+   var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+   var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
    document.getElementById("countdown").innerHTML = years + " Tahun " + months + " Bulan " + days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik ";
 
    if (distance < 0) {
-     clearInterval(x);
-     document.getElementById("countdown").innerHTML = "Waktu countdown telah berakhir";
-   }
  }, 1000);
+    document.getElementById("countdown").innerHTML = "-" + years1 + " Tahun " + "-" + months1 + " Bulan " + "-" + days1 + " Hari " + "-" + hours1 + " Jam " + "-" + minutes1 + " Menit " + "-" + seconds1 + " Detik ";
+  }
+   }, 1000);
     
