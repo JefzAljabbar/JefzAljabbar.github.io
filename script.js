@@ -15,10 +15,8 @@ function createFallingLeaf() {
          }
        }
    createFallingLeaf();
-     setInterval(createFallingLeaf, 500);
-   
-         
-         
+     setInterval(createFallingLeaf, 500);  
+      //======================   
  function WarnaRandom(){
  const letters= '0123456789ABCDEF';
  let color='#';
@@ -26,9 +24,9 @@ function createFallingLeaf() {
  color += letters[Math.floor(Math.random()*16)];}return color;
          }
  setInterval(()=>{ document.getElementById('randomText').style.color= WarnaRandom();},1000);
-         
+    //=======================
  var countDownDate = new Date("Mar 18, 2024");
- countDownDate.setFullYear(countDownDate.getFullYear() + 3);
+countDownDate.setFullYear(countDownDate.getFullYear() + 3);
 
  var x = setInterval(function() {
    var now = new Date().getTime();
@@ -54,4 +52,4 @@ function createFallingLeaf() {
     document.getElementById("countdown").innerHTML = "-" + years1 + " Tahun " + "-" + months1 + " Bulan " + "-" + days1 + " Hari " + "-" + hours1 + " Jam " + "-" + minutes1 + " Menit " + "-" + seconds1 + " Detik ";
   }
    }, 1000);
-    
+    //=======================
