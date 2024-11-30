@@ -1,4 +1,3 @@
-html,
 body {
   font-style: Arial, sans-serif;
   height: 100vh;
@@ -64,8 +63,9 @@ h1 {
   50%{color: aqua;}
 }
 /*=================================*/
-* {
-  box-sizing: border-box;
+pointermove{
+  
+      z-index:999;
 }
 /*===================================*/
 .container02 {
