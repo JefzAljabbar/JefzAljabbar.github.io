@@ -63,7 +63,21 @@ h1 {
   50%{color: aqua;}
 }
 /*=================================*/
+* {
+  box-sizing: border-box;
+}
 
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  display: grid;
+  color: white;
+  background: black;
+}
 /*===================================*/
 .container02 {
 position: relative;
