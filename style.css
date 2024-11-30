@@ -34,7 +34,7 @@ img {
   aspect-ratio: 1280/720;
   max-width: 80%;
   border: 1px solid #ffae00;
-  box-shadow:0px 4px 50px 1px #ffae00;
+  box-shadow:0 4px 50px 1px #ffae00;
 }
 section {
   color: white;	text-align: center;
@@ -87,7 +87,7 @@ height: 380px;
 background: #F982BF;
 border-radius: 170px;
 border-bottom-left-radius: 44px;
-border-bottom-right-radius: 0px;
+border-bottom-right-radius: 0;
 transform: scale(0.68);
 z-index: 999;
 }
@@ -100,7 +100,6 @@ width: 75px;
 height: 80px;
 background: #000000;
 border-radius: 95%;
-transform: scale(0.55);
 transform: rotate(-40deg);
 position: absolute;
 top: -25px;
@@ -115,7 +114,6 @@ width: 55px;
 height: 60px;
 background: #000000;
 border-radius: 95%;
-transform: scale(0.55);
 transform: rotate(-40deg);
 position: absolute;
 top: -05px;
@@ -238,8 +236,8 @@ margin: -2px auto 0;
 top: 331px;
 position: absolute;
 border-radius: -7px 14px rgb(186,67,113);
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
 border-bottom-right-radius: 23px;
 border-bottom-left-radius: 23px;
 border-top: 12px solid #DB9E74;
@@ -279,7 +277,7 @@ left: -22px;
 width: 21.77px;
 height: 70px;
 background: #000000; 
-border-radius: 0px 105px 0 0;
+border-radius: 0 105px 0 0;
 z-index: 9;
 }
 
@@ -311,7 +309,7 @@ z-index: 9;
 position: relative;
 width: 65px;
 height: 25px;
-left: 0px;
+left: 0;
 top: 40px;
 opacity: 1;
 background: #D3D3D3;
