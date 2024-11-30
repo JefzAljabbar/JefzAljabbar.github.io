@@ -56,11 +56,12 @@ h1 {
   padding: 20px; /* Mengatur jarak dalam */
 } 
 @keyframes kedip{
-  10%{color: white;}
-  20%{color: orange;}
-  30%{color: white;}
-  50%{color: deeppink;}
-  100%{color: magenta;}
+  15%{color: white;}
+  20%{color: deeppink;}
+  30%{color: yellow;}
+  40%{color: greenyellow;}
+  50%{color: aqua;}
+  100%{color: thistle;}
 }
 /*=================================*/
 
