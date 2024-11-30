@@ -11,7 +11,7 @@ function createFallingLeaf() {
 
          setTimeout(() => {
              leaf.remove();
-         },8000);
+         },11000);
          }
        }
    createFallingLeaf();
