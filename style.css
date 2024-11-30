@@ -1,3 +1,4 @@
+html,
 body {
   font-style: Arial, sans-serif;
   height: 100vh;
@@ -65,18 +66,6 @@ h1 {
 /*=================================*/
 * {
   box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  overflow: hidden;
-  display: grid;
-  color: white;
-  background: black;
 }
 /*===================================*/
 .container02 {
