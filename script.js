@@ -115,11 +115,11 @@ static css = `
 constructor() {
   super();
 
-  this.canvas;
-  this.ctx;
+  this.canvas=0;
+  this.ctx=0;
   this.fps = 60;
   this.msPerFrame = 1000 / this.fps;
-  this.timePrevious;
+  this.timePrevious=0;
   this.particles = [];
   this.pointer = {
     x: 0,
