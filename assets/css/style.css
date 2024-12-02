@@ -10,8 +10,8 @@
 }
 
 :root {
-  --blue: #6e693b;
-  --white: #221e22;
+  --blue: #c4c4c4;
+  --white: #1b3038;
   --gray: #f5f5f5;
   --black1: #c4c4c4;
   --black2: #e7e7e7;
@@ -184,6 +184,7 @@ body {
   outline: none;
   background-color: var(--white);
   border: 1px solid var(--black2);
+  color: var(--black1);
 }
 
 .search label ion-icon {
@@ -227,7 +228,7 @@ body {
   position: relative;
   background: var(--white);
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
@@ -239,13 +240,13 @@ body {
   position: relative;
   font-weight: 100;
   font-size: 0.8rem;
-  color: var(--blue);
+  color: var(--black1);
 }
 
 .cardBox .card .cardName {
   color: var(--black2);
   font-size: 1.3rem;
-  margin-top: 5px;
+  margin: 5px;
 }
 
 .cardBox .card .iconBx {
@@ -254,7 +255,7 @@ body {
 }
 
 .cardBox .card:hover {
-  background: var(--blue);
+  background: var(--black1);
 }
 .cardBox .card:hover .numbers,
 .cardBox .card:hover .cardName,
@@ -290,7 +291,7 @@ body {
 }
 .cardHeader h2 {
   font-weight: 600;
-  color: var(--blue);
+  color: var(--black2);
 }
 .cardHeader .btn {
   position: relative;
@@ -400,14 +401,14 @@ body {
 }
 .recentCustomers table tr td h4 span {
   font-size: 14px;
-  color: #8d7f01
+  color: var(--blue);
 }
 .recentCustomers table tr:hover {
   background: var(--blue);
-  color: var(--black2);
+  color: var(--white);
 }
 .recentCustomers table tr:hover td h4 span {
-  color: var(--black2);
+  color: var(--white);
 }
 
 /* ====================== Responsive Design ========================== */
