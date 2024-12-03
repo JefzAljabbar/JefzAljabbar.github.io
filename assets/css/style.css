@@ -216,22 +216,19 @@ body {
   position: relative;
   display: flex;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
-  justify-content: space-evenly;
+  grid-gap: 10px;
   margin: auto;
   width: 100%;
+  flex-wrap: nowrap;
 }
 
 .cardBox .card {
   position: relative;
   background: var(--white);
-  padding: 5px;
   border-radius: 15px;
   display: flex;
-  justify-content: flex-end;
   cursor: pointer;
-  flex-wrap: wrap;
-  margin: auto;
+  margin: 10px;
   width: 100%;
   box-shadow: 0 7px 25px rgba(255, 255, 255, 0.123);
   justify-content: center;
@@ -246,7 +243,7 @@ body {
 
 .cardBox .card .cardName {
   color: var(--black2);
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 5px;
 }
 
