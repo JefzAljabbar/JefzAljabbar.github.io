@@ -420,9 +420,10 @@ body {
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 600px) {
-  .navigation {
-    bottom: 0px;
-  }
+            .navigation {
+                display: block; /* Menampilkan navigasi bawah */
+            }
+        }
   .navigation.active {
     width: 100%;
     left: 0;
