@@ -18,12 +18,14 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
 .container {
   position: relative;
+  height: 100%;
   width: 100%;
 }
 
@@ -136,8 +138,6 @@ body {
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;
-}
-.main.active {
 }
 
 .topbar {
