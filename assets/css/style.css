@@ -419,26 +419,7 @@ body {
 }
 
 /* ====================== Responsive Design ========================== */
-@media (max-width: 600px) {
-            .navigation {
-                display: block; /* Menampilkan navigasi bawah */
-            }
-        }
-  .navigation.active {
-    width: 100%;
-    left: 0;
-  }
-  .main {
-    width: 100%;
-    left: 0;
-  }
-  .main.active {
-    left: 300px;
-  }
-  .cardBox {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 @media (max-width: 768px) {
   .details {
