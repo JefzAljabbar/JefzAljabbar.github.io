@@ -34,7 +34,8 @@ body {
   position: fixed;
   width: 100%;
   height:65px;
-  bottom: 0;
+  bottom:1px;
+  top: auto;
   background: var(--blue);
   transition: 0.5s;
   z-index: 9999;
