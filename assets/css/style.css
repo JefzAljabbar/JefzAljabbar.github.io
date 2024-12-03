@@ -419,9 +419,9 @@ body {
 }
 
 /* ====================== Responsive Design ========================== */
-@media (max-width: 991px) {
+@media (max-width: 600px) {
   .navigation {
-    left: 0px;
+    bottom: 0px;
   }
   .navigation.active {
     width: 100%;
