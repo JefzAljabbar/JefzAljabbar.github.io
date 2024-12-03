@@ -216,7 +216,6 @@ body {
   position: relative;
   display: flex;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
   margin: auto;
   width: 100%;
   flex-wrap: nowrap;
@@ -228,7 +227,7 @@ body {
   border-radius: 15px;
   display: flex;
   cursor: pointer;
-  margin: 10px;
+  margin: 5px;
   width: 100%;
   box-shadow: 0 7px 25px rgba(255, 255, 255, 0.123);
   justify-content: center;
