@@ -30,13 +30,15 @@ body {
 /* =============== Navigation ================ */
 .navigation {
   position: fixed;
-  width: 300px;
-  height: 100%;
+  width: 100%;
+  height:80px;
+  top: 92vh;
   background: var(--blue);
-  border-left: 10px solid var(--blue);
   transition: 0.5s;
-  overflow: hidden;
+  z-index: 9999;
 }
+
+
 .navigation.active {
   width: 80px;
 }
@@ -46,6 +48,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .navigation ul li {
@@ -132,16 +136,13 @@ body {
 /* ===================== Main ===================== */
 .main {
   position: absolute;
-  width: calc(100% - 300px);
-  left: 300px;
+  width: 100%;
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;
-}
+}/*
 .main.active {
-  width: calc(100% - 80px);
-  left: 80px;
-}
+}*/
 
 .topbar {
   width: 100%;
@@ -161,6 +162,7 @@ body {
   align-items: center;
   font-size: 2.5rem;
   cursor: pointer;
+  color: var(--black2);
 }
 
 .search {
@@ -276,7 +278,6 @@ body {
 
 .details .recentOrders {
   position: relative;
-  display: grid;
   min-height: 500px;
   background: var(--white);
   padding: 20px;
@@ -414,10 +415,10 @@ body {
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
   .navigation {
-    left: -300px;
+    left: 0px;
   }
   .navigation.active {
-    width: 300px;
+    width: 100%;
     left: 0;
   }
   .main {
@@ -456,7 +457,7 @@ body {
   }
   .navigation {
     width: 100%;
-    left: -100%;
+    left: 100%;
     z-index: 1000;
   }
   .navigation.active {
