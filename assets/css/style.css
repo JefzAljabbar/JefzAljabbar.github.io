@@ -20,11 +20,13 @@
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+    background-color: var(--white);
+    overflow-x: hidden;
 }
 
 .container {
-  position: relative;
+    background-color: var(--white);
+    position: relative;
 }
 
 /* =============== Navigation ================ */
@@ -421,9 +423,6 @@ body {
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 480px) {
-  body{
-    background-color: var(--white);
-  }
   .navigation {
     position: fixed;
     padding-top: 40px;
