@@ -421,6 +421,9 @@ body {
 
 /* ====================== Responsive Design ========================== */
 @media (max-width: 480px) {
+  body{
+    background-color: var(--white);
+  }
   .navigation {
     position: fixed;
     padding-top: 40px;
