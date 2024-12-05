@@ -277,29 +277,29 @@ body {
   padding: 10px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 10px;
-  /* margin-top: 10px; */
+  grid-gap: 10px; 
 }
-
-
 .details .recentOrders {
   position: relative;
-  min-height: 500px;
   background: var(--white);
   padding: 20px;
   box-shadow: 0 7px 25px rgba(255, 255, 255, 0.123);
   border-radius: 20px;
   margin-bottom: 10px;
 }
-
 .details .cardHeader {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  background-color: var(--blue);
+  margin-left: 5px;
+  font-size: 14px;
+  border-radius: 30px;
 }
 .cardHeader h2 {
   font-weight: 500;
-  color: var(--black2);
+  color: var(--white);
+  margin-left: 5px;
 }
 .cardHeader .btn {
   position: relative;
@@ -317,10 +317,9 @@ body {
   
 }
 .details table thead td {
-  background-color: var(--black1);
   font-weight: 600;
-  border-radius: 30px;
-  color: var(--white);
+  color: var(--black2);
+  font-size: 12px;
 }
 .details .recentOrders table tr {
   color: var(--black1);
@@ -430,8 +429,12 @@ body {
     position: fixed;
     padding-top: 40px;
   }
+.details .recentOrders {
+padding: 5px;
+}
   .container{
-    font-size: 10px;
+    font-size: 12px;
+    margin: 0;
   }
   .navigation ul li a .icon ion-icon {
     margin-top: 28px;
@@ -466,6 +469,15 @@ body {
   .toggle {
     font-size: 20px;
     z-index: 10001;
+  }
+  .status.delivered {
+    font-size: 11px;
+  }.status.pending{
+    font-size: 11px;
+  }.status.return{
+    font-size: 11px;
+  }.status.inProgress{
+    font-size: 11px;
   }
   .main.active .toggle {
     color: #fff;
