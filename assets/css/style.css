@@ -21,7 +21,6 @@ body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
-  background-color: var(--white);
 }
 
 .container {
@@ -424,17 +423,27 @@ body {
 @media (max-width: 600px) {
   .navigation {
     position: fixed;
+    padding-top: 40px;
   }
-
-  .navigation.active {
-    left: 0;
+  .container{
+    font-size: 10px;
   }
+  .navigation ul li a .icon ion-icon {
+    margin-top: 28px;
+    font-size: 1.15rem;
+  }
+.search label input {
+  width: 100%;
+  height: 20px;
+  border-radius: 40px;
+  font-size: 10px;
+}
+.search label ion-icon {
+  font-size: 0.8rem;
+}
   .cardBox {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-
-@media (max-width: 768px) {
   .details {
     grid-template-columns: 1fr;
   }
@@ -444,19 +453,18 @@ body {
   .status.inProgress {
     white-space: nowrap;
   }
-}
-
-@media (max-width: 480px) {
   .cardBox {
     grid-template-columns: repeat(1, 1fr);
   }
   .cardHeader h2 {
-    font-size: 15px;
+    font-size: 13px;
   }
   .user {
-    min-width: 40px;
+    width: 35px;
+    height: 25px;
   }
   .toggle {
+    font-size: 20px;
     z-index: 10001;
   }
   .main.active .toggle {
