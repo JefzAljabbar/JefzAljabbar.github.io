@@ -203,11 +203,13 @@ body {
 
 .user {
   position: relative;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  display: flex;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
+  right: 0;
 }
 
 .user img {
@@ -446,24 +448,11 @@ body {
   .cardBox {
     grid-template-columns: repeat(2, 1fr);
   }
-  .details {
-    grid-template-columns: 1fr;
-  }
-  .recentOrders {
-    overflow-x: auto;
-  }
-  .status.inProgress {
-    white-space: nowrap;
-  }
   .cardBox {
     grid-template-columns: repeat(1, 1fr);
   }
   .cardHeader h2 {
     font-size: 13px;
-  }
-  .user {
-    width: 35px;
-    height: 25px;
   }
   .toggle {
     font-size: 20px;
@@ -474,5 +463,22 @@ body {
     position: fixed;
     right: 0;
     left: initial;
+  }
+}
+@media (max-width: 600px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
+  .recentOrders {
+    overflow-x: auto;
+  }
+  .user {
+    min-width: 25px;
+    max-width: 25px;
+    min-height: 25px;
+    max-height: 25px;
+  }
+  .status.inProgress {
+    white-space: nowrap;
   }
 }
