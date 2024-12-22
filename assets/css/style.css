@@ -1,0 +1,14 @@
+body{
+  background: rgb(39, 65, 95);
+  display: flex;
+  text-wrap: nowrap;
+  justify-content: center;
+}
+h1{
+  padding: 5px 80px;
+  color: black;
+  background-color: aqua;
+  margin-top: 40vh;
+  border-radius: 35px;
+  border-color: aqua;
+}
