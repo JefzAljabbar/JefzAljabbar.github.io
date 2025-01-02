@@ -19,5 +19,5 @@ h1{
   background: var(--bg);
   border-radius: 5px;
   box-shadow: 0 0px 100px rgba(0, 195, 255, 0.247);
-  border-color: aqua;
+  border: 1px solid var(--neon);  
 }
